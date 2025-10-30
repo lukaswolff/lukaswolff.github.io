@@ -1,13 +1,151 @@
-# lukaswolff.github.io
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lukas Wolff</title>
+    <title>Dein Name - Mein Portfolio</title>
+    <style>
+        /* --- CSS STYLES BEGINNEN HIER --- */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Heller Hintergrund */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #1a4d2e; /* Dunkles Grün */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex; /* Flexbox für Hauptlayout */
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .sidebar {
+            flex: 1; /* Nimmt einen Teil des Platzes ein */
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content {
+            flex: 2; /* Nimmt den größeren Teil des Platzes ein */
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: auto;
+            border-radius: 50%; /* Runde Form */
+            border: 5px solid #1a4d2e;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1a4d2e;
+            border-bottom: 2px solid #a3c4a2;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        
+        .cv-link a {
+            display: block;
+            background-color: #ff9900; /* Akzentfarbe: Orange */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .cv-link a:hover {
+            background-color: #cc7a00;
+        }
+
+        /* Fügt etwas Abstand zwischen den Abschnitten hinzu */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        /* --- CSS STYLES ENDEN HIER --- */
+    </style>
 </head>
 <body>
-    <h1>Willkommen auf meiner Website!</h1>
-    <p>Ich bin Mathematiker</p>
+
+    <div class="header">
+        <h1>Dein Name</h1>
+        <p>Deine Berufsbezeichnung / Dein Motto</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="sidebar">
+            <div class="section">
+                <h2>Kontakt</h2>
+                <img src="https://via.placeholder.com/200" alt="Platzhalter-Foto von dir" class="profile-pic">
+                <p><strong>E-Mail:</strong> dein.name@beispiel.de</p>
+                <p><strong>Telefon:</strong> (0123) 456789</p>
+                <p><strong>Standort:</strong> Deine Stadt, Land</p>
+            </div>
+            
+            <div class="section cv-link">
+                <a href="#" target="_blank">Lebenslauf (CV) ansehen</a>
+            </div>
+        </div>
+
+        <div class="content">
+            
+            <div class="section">
+                <h2>Über mich</h2>
+                <p>
+                    Hallo! Ich bin **[Dein Name]**, und ich arbeite als **[Deine Berufsbezeichnung]**. 
+                    Meine Leidenschaft ist es, **[Beschreibe deine Haupttätigkeit]**. In den letzten 
+                    [Anzahl] Jahren habe ich Erfahrungen in **[Bereich 1]** und **[Bereich 2]** gesammelt. 
+                    Dieser Bereich dient dazu, Besuchern einen kurzen und prägnanten Einblick in deine Person und 
+                    deine Motivation zu geben.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Fähigkeiten & Stärken</h2>
+                <ul>
+                    <li>HTML5 & CSS3 (Web-Grundlagen)</li>
+                    <li>Projektmanagement</li>
+                    <li>Fremdsprachen (z.B. Englisch, Spanisch)</li>
+                    <li>Kreatives Problemlösen</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Projekte (Optionale Sektion)</h2>
+                <p>
+                    **Projekt A:** Kurze Beschreibung, worum es ging und was deine Rolle war.
+                </p>
+                <p>
+                    **Projekt B:** Füge hier einen weiteren Punkt oder eine Verlinkung zu einer externen Seite ein.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
